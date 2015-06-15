@@ -1,6 +1,6 @@
 h3 you've landed!
 input(type='text' ng-model='handle')
-{{ lowercasehandle() }}
+p {{ lowercasehandle() }}
 
 .maths
   input(type="text" placeholder="enter a number" ng-model="main.num")
@@ -18,6 +18,8 @@ input(type='text' ng-model='handle')
     p number is divisible by 7
   div(ng-show='main.num % 8 === 0')
     p number is divisible by 8
+  div(ng-show='main.num % 9 === 0')
+    p number is divisible by 9
 
 .cards
   button(ng-click="getDeck()") Get Deck
